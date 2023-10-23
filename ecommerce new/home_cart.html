@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   
+    <!-- Custom StyleSheet -->
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Your Cart</title>
+  </head>
+  <body>
+    <!-- Navigation -->
+    <div class="top-nav">
+      <div class="container d-flex">
+        <p>Order Online </p>
+        <ul class="d-flex">
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="navigation">
+      <div class="nav-center container d-flex">
+        <h1 class="logo">AARA Shopping</h1>
+
+        <ul class="nav-list d-flex">
+          <li class="nav-item">
+            <a href="home_cart.html" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="product.html" class="nav-link">Shop</a>
+          </li>
+          <li class="nav-item">
+            <a href="terms.html" class="nav-link">Terms</a>
+          </li>
+          <li class="nav-item">
+            <a href="about.html" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="contact.html" class="nav-link">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a href="login.html" class="nav-link">Login?</a>
+          </li>
+        
+        </ul>
+
+      </div>
+    </div> 
+
+    <!-- Cart Items -->
+    <div class="container cart">
+      <table name="tab">
+        <tr>
+          <th>Product</th>
+          <th>Quantity</th>
+          <th>Subtotal</th>
+        </tr>
+        <tr>
+          <td>
+            <div class="cart-info">
+              <img src="./images/airdopes.jpeg" alt="" />
+              <div>
+                <p>Airdopes 141</p>
+                <span>Price: 3000rs</span> <br />
+                <a href="#">remove</a>
+              </div>
+            </div>
+          </td>
+          <td><input type="number" id="num1" value="1" min="1" /></td>
+          <td id="price1">300.00</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="cart-info">
+              <img src="./images/aleogel.jpeg" alt="" />
+              <div>
+                <p>Aleovera Gel</p>
+                <span>Price: 200rs</span> <br />
+                <a href="#">remove</a>
+              </div>
+            </div>
+          </td>
+          <td><input type="number" name="num2" value="1" min="1" /></td>
+          <td id="price2">200.00</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="cart-info">
+              <img src="./images/guitar.jpeg" alt="" />
+              <div>
+                <p>Guitar</p>
+                <span>Price: 15000rs</span> <br />
+                <a href="#">remove</a>
+              </div>
+            </div>
+          </td>
+          <td><input type="number" name="num3" value="1" min="1" /></td>
+          <td id="price3">15000</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="cart-info">
+              <img src="./images/cricket_bat.jpeg" alt="" />
+              <div>
+                <p>Cricket Bat</p>
+                <span>Price: 2500rs</span> <br />
+                <a href="#">remove</a>
+              </div>
+            </div>
+          </td>
+          <td><input type="number" name="num4" value="1" min="1" /></td>
+          <td id="price4">2500.00</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="cart-info">
+              <img src="./images/girls_shoe.jpeg" alt="" />
+              <div>
+                <p>Girl Shoe</p>
+                <span>Price: 1899rs</span> <br />
+                <a href="#">remove</a>
+              </div>
+            </div>
+          </td>
+          <td><input type="number" name="num5" value="1" min="1" /></td>
+          <td id="price5">1899</td>
+        </tr>
+      </table>
+      <div class="total-price">
+        <table>
+          <tr>
+            <td>Subtotal</td>
+            <td>9099rs</td>
+          </tr>
+          <tr>
+            <td>Tax</td>
+            <td>100rs</td>
+          </tr>
+          <tr>
+            <td>Total</td>
+            <td>9199rs</td>
+          </tr>
+        </table>
+        <a href="#" class="checkout btn" onclick="myFunction()">Proceed To Checkout</a>
+      </div>
+    </div>
+
+    <!-- Latest Products -->
+    <section class="section featured">
+      <div class="top container">
+        <h1>Latest Products</h1>
+        <a href="#" class="view-more">View more</a>
+      </div>
+      <div class="product-center container">
+        <div class="product-item">
+          <div class="overlay">
+            <a href="" class="product-thumb">
+              <img src="./images/laptop.jpeg" alt="" />
+            </a>
+          </div>
+          <div class="product-info">
+            <span>laptop</span>
+            <a href="">macbook 14 pro</a>
+            <h4>150000rs</h4>
+          </div>
+        </div>
+        <div class="product-item">
+          <div class="overlay">
+            <a href="" class="product-thumb">
+              <img src="./images/nivea_men.jpeg" alt="" />
+            </a>
+            <span class="discount">40%</span>
+          </div>
+          <div class="product-info">
+            <span>Face wash</span>
+            <a href="">Nivea men facewash 100g</a>
+            <h4>150rs</h4>
+          </div>
+        </div>
+        <div class="product-item">
+          <div class="overlay">
+            <a href="" class="product-thumb">
+              <img src="./images/csk.jpeg" alt="" />
+            </a>
+          </div>
+          <div class="product-info">
+            <span>MEN'S CLOTHES</span>
+            <a href="">Csk Jersy</a>
+            <h4>450rs</h4>
+          </div>
+        </div>
+        <div class="product-item">
+          <div class="overlay">
+            <a href="" class="product-thumb">
+              <img src="./images/football.jpeg" alt="" />
+            </a>
+          </div>
+          <div class="product-info">
+            <span>Football</span>
+            <a href="">free size football</a>
+            <h4>1699rs</h4>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="row">
+        <div class="col d-flex">
+          <h4>INFORMATION</h4>
+          <a href="">About us</a>
+          <a href="">Contact Us</a>
+          <a href="">Term & Conditions</a>
+          <a href="">Shipping Guide</a>
+        </div>
+        <div class="col d-flex">
+          <h4>USEFUL LINK</h4>
+          <a href="">Online Store</a>
+          <a href="">Customer Services</a>
+          <a href="">Promotion</a>
+          <a href="">Top Brands</a>
+        </div>
+      </div>
+    </footer>
+    <script src="./javascript/cart_calculation.js"></script>
+  </body>
+</html>
